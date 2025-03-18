@@ -1,3 +1,4 @@
+/* Dont give output as single a or single digit do include some operator */
 %{
 #include <stdio.h>
 #include <string.h>
