@@ -5,9 +5,9 @@ int com=0;
 %}
 %s COMMENT
 %%
-"//".*\n {com++;}
+"//".* {com++;}
 "/*" {BEGIN COMMENT ;}
-<COMMENT>"*/"\n {BEGIN 0;com++ ;}
+<COMMENT>"*/" {BEGIN 0;com++ ;}
 <COMMENT>\n { com++;}
 <COMMENT>. {;}
 %%
